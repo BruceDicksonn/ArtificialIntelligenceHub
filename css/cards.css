@@ -1,0 +1,55 @@
+.container-cards {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.cards {
+    flex-basis: 1200px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(380px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    display: grid;
+    gap: 1rem 0;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.card-nome {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.card-empresa {
+    color: #C0C0C3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.card:hover {
+    background-color: #fff;
+    transition-duration: .6s;
+}
+.card:hover * {
+    color: #000;
+}
+
+@media(max-width:1000px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

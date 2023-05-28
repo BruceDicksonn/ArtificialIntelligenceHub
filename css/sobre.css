@@ -1,0 +1,76 @@
+
+
+.container-sobre {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: var(--bg-container);
+}
+
+.sobre-nos {
+    justify-self: center;
+    max-width: 800px;
+    display: grid;
+}
+
+.sobre-nos-informacoes {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem 0;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: 0 0 10px 3px rgba(200, 200, 200, .35);
+}
+
+.nome-profissional,
+.profissao,
+.foto-perfil-profissional img {
+    padding: 0 2rem;
+}
+
+.nome-profissional,
+.profissao {
+    color: #fff;
+    text-align: start;
+}
+
+.foto-perfil-profissional {
+    margin-bottom: 1.5rem;
+}
+
+.descricao-profissional {
+    padding: 2rem;
+    line-height: 1.90;
+}
+
+.foto-perfil-profissional {
+    align-self: center;
+}
+
+@media(max-width:500px) {
+
+    .container-sobre > h1 {
+        font-size: 3rem;
+    }
+
+    .foto-perfil-profissional {
+        align-self: flex-start;
+    }
+
+    .foto-perfil-profissional img {
+        width: 350px;
+        height: 250px;
+        padding: 0;
+    }
+
+    .container-sobre .profissao {
+        font-size: 1rem;
+    }
+
+    .container-sobre .nome-profissional {
+        font-size: 1.5rem;
+    }
+
+}

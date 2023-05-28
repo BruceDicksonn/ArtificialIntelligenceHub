@@ -1,0 +1,154 @@
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.toggle-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container-menu  a {
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.container-menu  a::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.container-menu a:hover::after {
+    width: 100%;
+    transition-duration: .6s;
+}
+
+.toggle {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff; 
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width:700px) {
+
+    .container-menu {
+        justify-content: end;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .toggle-menu.active {
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+        background-color: var(--bg-card);
+        border-radius: 6px;
+        padding: 1rem;
+        animation: showToggleMenu .4s forwards;
+    }
+
+    .toggle-menu.active a {
+        color: #fff;
+    }
+
+    .toggle-menu.active li:hover a {
+        text-decoration: underline;
+        background-color: #dedede;
+        color: #000;
+    }
+
+    .container-menu a::after {
+        display: none;
+    }
+
+    .toggle {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .toggle::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: #000;
+        box-shadow: 0 -4px 0 #000,0 4px 0 #000;
+        position: absolute;   
+        transition: transform .6s ease;     
+    }
+    
+    .toggle::after {
+        content: '';
+        display: none;
+        width: 16px;
+        height: 2px;
+        background-color: #000; 
+        position: absolute;       
+    }
+
+    .toggle:hover,
+    .toggle.active {
+        background-color: var(--bg-card);
+        transition-duration: .6s;
+    }
+
+    .toggle:hover::before,
+    .toggle:hover::after {
+        background-color: #fff; 
+        box-shadow: 0 -4px 0 #fff,
+        0 4px 0 #fff;
+    }
+
+    .toggle.active::before,
+    .toggle.active::after {
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    .toggle.active::after{
+        display: block;
+    }
+
+    .toggle.active::before {
+        transform: rotate(135deg);
+    }
+
+    .toggle.active::after {
+        transform: rotate(45deg);
+    }
+
+}
+
+@keyframes showToggleMenu {
+    
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+
+}

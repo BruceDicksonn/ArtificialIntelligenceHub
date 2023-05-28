@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@100;400;700;800&display=swap');
+
+:root {
+    --font-default: 'JetBrains Mono', monospace;
+    --font-icons: 'DM Sans', arial, helvetica 
+}
+
+.title-g {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+.title-m {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.title-s {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.description-b {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.description-s {
+    font-size: 1rem;
+    color: #fff;
+}

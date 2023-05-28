@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-default);
+}
+
+.grid-container {
+    display: grid;
+    padding: 3rem;
+}
+
