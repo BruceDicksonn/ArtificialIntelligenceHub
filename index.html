@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artficial Intelligent Hub</title>
+
+    <script type="module" src="js/adaptarComponentes.js"></script>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="preload" href="css/style.css" as="style" />
@@ -13,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="container-menu">
+        <nav data-anime="200" class="container-menu fadeInLeft">
          <button class="toggle js-toggle-button" aria-controls="content-menu" aria-expanded="false"></button>
          <ul class="toggle-menu js-menu" id="menu">
                <li><a href="#">IA's</a></li>
@@ -25,14 +27,14 @@
 
     <section class="grid-container apresentacao">
         <div>
-            <h1 class="title-g">Artificial Intelligence Hub</h1>
+            <h1 data-anime="350" class="title-g fadeInLeft">Artificial Intelligence Hub</h1>
             <p class="description-b">
                 Explore um universo de serviços de IA e escolha a que mais se adequar à sua necessidade atual :p
             </p>
         </div>
     </section>
 
-    <section class="container-cards">
+    <section data-anime="450" class="container-cards fadeInLeft">
         <div class="cards" id="cards">
             <a class="card" href="https://openai.com/product/dall-e-2" target="_blank">
                 <svg width="25" class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-5 text-indigo-600 dark:text-pink-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
@@ -126,29 +128,100 @@
 
     <section class="container-sobre">
        <h1 class="title-g">Sobre nós</h1>
-         <div class="sobre-nos">
 
-            <div class="sobre-nos-informacoes">
+       <div id="splide" class="splide sobre-nos">
 
-               <div class="foto-perfil-profissional">
-                  <img width="400" height="380" src="/img/me.jpg" alt="">
-               </div>
+         <div id="splide__track" class="splide__track">
 
-               <h3 class="title-s profissao">Front End / Mobile Developer</h3>
-               <h2 class="title-m nome-profissional">Bruce Dickson</h2>
-               <div>
-                  <p class="description-s descricao-profissional">
-                     Bruce Dickson, 22 anos e amante de tecnologia, filmes, animes, música e games. Aluno do curso de Análise e Desenvolvimento de Sistemas e responsável pela parte de UX / UI Design e Front-end do projeto. Seus principais hobbies são tocar guitarra, jogar videogames e assistir bons filmes/animes. 
-                  </p>
+            <ul id="splide__list" class="splide__list list">
 
-               </div>
+               <li id="splide__slide" class="splide__slide slide">
+                  <div class="sobre-nos-informacoes">
+                     <div class="foto-perfil-profissional">
+                        <img width="400" height="380" src="/img/me.jpg" alt="">
+                     </div>
+      
+                     <h3 class="title-s profissao">Front End / Mobile Developer</h3>
+                     <h2 class="title-m nome-profissional">Bruce Dickson</h2>
+                     <div>
+                        <p class="description-s descricao-profissional">
+                           Bruce Dickson, 22 anos e amante de tecnologia, filmes, animes, música e games. Aluno do curso de Análise e Desenvolvimento de Sistemas e responsável pela parte de UX / UI Design e Front-end do projeto. Seus principais hobbies são tocar guitarra, jogar videogames e assistir bons filmes/animes. 
+                        </p>
+      
+                     </div>
+                  </div> 
+               </li>
 
-            </div>   
+
+
+               <li id="splide__slide" class="splide__slide slide">
+                  <div class="sobre-nos-informacoes">
+                     <div class="foto-perfil-profissional">
+                        <img width="400" height="380" src="/img/vito.jpg" alt="">
+                     </div>
+      
+                     <h3 class="title-s profissao">Back-end Developer</h3>
+                     <h2 class="title-m nome-profissional">Vitor Martins</h2>
+                     <div>
+                        <p class="description-s descricao-profissional">
+                           Graduando em Análise e Desenvolvimento de Sistemas (ISL Wyden). Apaixonado por tecnologia e solução de desafios que necessitam de criatividade e trabalho em equipe. E gay
+                        </p>
+      
+                     </div>
+                  </div> 
+               </li>
+               
+               
+               <li id="splide__slide" class="splide__slide slide">
+                  <div class="sobre-nos-informacoes">
+                     <div class="foto-perfil-profissional">
+                        <img width="400" height="380" src="/img/thcylla.jpg" alt="">
+                     </div>
+      
+                     <h3 class="title-s profissao">Back-end Developer</h3>
+                     <h2 class="title-m nome-profissional">Thcylla Sá</h2>
+                     <div>
+                        <p class="description-s descricao-profissional">
+                           Thcylla Sá, 21 anos,apaixonada pela área de tecnologia como analista de sistemas.Sou uma ávida leitora, sempre buscando novos conhecimentos enriquecer  profissionalmente em minha carreira.Sou responsável por selecionar as IAs que serão implementadas no projeto.
+                        </p>
+      
+                     </div>
+                  </div> 
+               </li>
+               
+               
+
+               <li id="splide__slide" class="splide__slide slide">
+                  <div class="sobre-nos-informacoes">
+                     <div class="foto-perfil-profissional">
+                        <img width="400" height="380" src="/img/jasso.jpeg" alt="">
+                     </div>
+      
+                     <h3 class="title-s profissao">Analista de Suporte</h3>
+                     <h2 class="title-m nome-profissional">Jasson Emanuel</h2>
+                     <div>
+                        <p class="description-s descricao-profissional">
+                           Jasson Emanuel, 23 anos. Aluno do Curso de Análise e Desenvolvimento de Sistemas e responsável pela parte de Pesquisas relacionadas à I.A que faz o processo de geração de imagens.
+                        </p>
+
+                     </div>
+                  </div> 
+               </li>
+
+
+            </ul>
+  
 
          </div>
+
+       </div>  
+
     </section>
 
 </body>
+
+<script src="./js/plugins/simple-anime.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script type="module" src="js/index.js"></script>
+
 </html>
