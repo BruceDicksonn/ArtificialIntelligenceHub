@@ -1,12 +1,12 @@
-@import url(/css/geral.css);
-@import url(/css/menu.css);
-@import url(/css/apresentacao.css);
-@import url(/css/cards.css);
-@import url(/css/sobre.css);
-@import url(/css/contato.css);
+@import url(./geral.css);
+@import url(./menu.css);
+@import url(./apresentacao.css);
+@import url(./cards.css);
+@import url(./sobre.css);
+@import url(./contato.css);
 
-@import url(/css/utils/fonts.css);
-@import url(/css/utils/colors.css);
-@import url(/css/utils/animacao.css);
+@import url(./utils/fonts.css);
+@import url(./utils/colors.css);
+@import url(./utils/animacao.css);
 
 
