@@ -18,8 +18,7 @@ body {
     font-family: var(--font-default);
 }
 
-.grid-container {
-    display: grid;
-    padding: 3rem;
+.container {
+    padding: 6rem 3rem;
 }
 

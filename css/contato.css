@@ -1,0 +1,85 @@
+.contato {
+    padding: 6rem;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.form-contato {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.form-contato input {
+    width: 500px;
+    /* height: 40px; */
+    border: 1px solid #ccc;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.form-contato textarea {
+    width: 500px;
+    height: 250px;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-family: var(--font-default);
+}
+
+.form-contato *:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+.form-contato input::placeholder {
+    font-family: var(--font-default);
+}
+
+.form-contato button {
+    background-color: var(--bg-button);
+    padding: 1rem 3rem;
+    border: 1px groove      ;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--font-default);
+    transition: background-color .6s;
+}
+
+.form-contato button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width:700px){
+
+     .contato > h1 {
+        font-size: 4rem;
+     }   
+
+     .contato > h2 {
+        font-size: 2rem;
+     }
+     
+     .form-contato {
+        padding: 0;
+     }
+
+     .form-contato input,
+     .form-contato textarea {
+        font-size: 1rem;
+        width: 400px;
+        width: 100%;
+     }
+
+     .form-contato button {
+        padding: .75rem 3rem;
+     }
+
+}

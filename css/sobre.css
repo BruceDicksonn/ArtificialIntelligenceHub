@@ -23,7 +23,7 @@
     padding: 2rem 0;
     background-color: var(--bg-card);
     border-radius: 8px;
-    box-shadow: 0 0 10px 3px rgba(200, 200, 200, .35);
+    box-shadow: 0 0 16px 8px rgba(200, 200, 200, .25);
 }
 
 .foto-perfil-profissional {
@@ -61,4 +61,27 @@
         font-size: 1.5rem;
     }
     
+}
+
+
+button.splide__arrow.splide__arrow--prev {
+    background-color: rgba(204, 204, 204, 0.308);
+    position: absolute;
+    left: 0;
+    transition: background-color .6s;
+}
+
+button.splide__arrow.splide__arrow--prev:hover {
+    background-color: #fff;
+}
+
+button.splide__arrow.splide__arrow--next {
+    background-color: rgba(204, 204, 204, 0.308);
+    position: absolute;
+    right: 0;
+    transition: background-color .6s;
+}
+
+button.splide__arrow.splide__arrow--next:hover {
+    background-color: #fff;
 }

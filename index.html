@@ -18,14 +18,14 @@
         <nav data-anime="200" class="container-menu fadeInLeft">
          <button class="toggle js-toggle-button" aria-controls="content-menu" aria-expanded="false"></button>
          <ul class="toggle-menu js-menu" id="menu">
-               <li><a href="#">IA's</a></li>
-               <li><a href="#">Sobre nós</a></li>
-               <li><a href="#">Contato</a></li>
+               <li><a href="#ias">IA's</a></li>
+               <li><a href="#sobre">Sobre nós</a></li>
+               <li><a href="#contato">Contato</a></li>
          </ul>
         </nav>
     </header>
 
-    <section class="grid-container apresentacao">
+    <section class="container apresentacao">
         <div>
             <h1 data-anime="350" class="title-g fadeInLeft">Artificial Intelligence Hub</h1>
             <p class="description-b">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-    <section data-anime="450" class="container-cards fadeInLeft">
+    <section data-anime="450" class="container container-cards fadeInLeft" id="ias" anime-scroll>
         <div class="cards" id="cards">
             <a class="card" href="https://openai.com/product/dall-e-2" target="_blank">
                 <svg width="25" class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-5 text-indigo-600 dark:text-pink-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
@@ -126,8 +126,8 @@
         </div>
     </section>
 
-    <section class="container-sobre">
-       <h1 class="title-g">Sobre nós</h1>
+    <section class="container container-sobre" anime-scroll>
+       <h1 id="sobre" class="title-g">Sobre nós</h1>
 
        <div id="splide" class="splide sobre-nos">
 
@@ -215,6 +215,20 @@
          </div>
 
        </div>  
+
+    </section>
+
+    <section class="container contato" id="contato" anime-scroll>
+
+      <h1 class="title-g">Contato</h1>
+      <h2 class="title-m">Increva-se para receber atualizações</h2>
+
+      <form class="form-contato" action="mailto:b.dickson173@gmail.com">
+         <input type="nome" name="nome" id="nome" required placeholder="Digite seu nome aqui">
+         <input type="email" name="email" id="email" required placeholder="Digite um email válido">
+         <textarea placeholder="Deixe sua opinião aqui" id="descricao" name="descricao"></textarea>
+         <button>Enviar</button>
+      </form>
 
     </section>
 

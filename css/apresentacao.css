@@ -6,10 +6,6 @@
 
 @media(max-width: 700px) {
     
-    .apresentacao {
-        padding: 1rem;
-    }
-    
     .apresentacao  h1 {
         font-size: 3rem;
     }
