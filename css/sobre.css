@@ -3,8 +3,11 @@
     flex-flow: column;
     align-items: center;
     gap: 2rem;
-    padding: 6rem 0;
     background-color: var(--bg-container);
+}
+
+.container-sobre > h1 {
+    padding: 2rem 0;
 }
 
 .sobre-nos {
