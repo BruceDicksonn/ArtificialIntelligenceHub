@@ -7,7 +7,7 @@
 }
 
 .container-sobre > h1 {
-    padding: 2rem 0;
+    padding: .5rem 0;
 }
 
 .sobre-nos {
@@ -64,6 +64,22 @@
         font-size: 1.5rem;
     }
     
+}
+
+@media(max-width:500px) {
+
+    .sobre-nos-informacoes {
+        align-items: center;
+    }
+    
+    .foto-perfil-profissional img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .profissao {
+        text-align: center;
+    }
 }
 
 
