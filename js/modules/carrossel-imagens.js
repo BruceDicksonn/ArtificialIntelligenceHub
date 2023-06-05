@@ -8,7 +8,7 @@ export default function initCarrossel() {
             arrows: true,
             pagination: false,
             drag: false,
-            speed: 1500,
+            speed: 2000,
             interval: 3500,
             breakpoints: {
                 600: {

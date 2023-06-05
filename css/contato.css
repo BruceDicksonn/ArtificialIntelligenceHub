@@ -5,6 +5,17 @@
     text-align: center;
 }
 
+.contato h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contato h1 > svg {
+    color: #D97706;
+}
+
 .form-contato {
     display: flex;
     flex-flow: column;
@@ -81,4 +92,20 @@
         padding: .75rem 3rem;
      }
 
+}
+
+@media (max-width:500px) {
+
+    .contato {
+        gap: 3rem;   
+    }
+
+    .contato > h1 {
+        font-size: 3rem;
+     }   
+
+     .contato > h2 {
+        font-size: 1.3rem;
+     }
+     
 }
