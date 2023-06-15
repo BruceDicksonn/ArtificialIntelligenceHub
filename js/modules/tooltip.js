@@ -22,7 +22,6 @@ export default class Tooltip{
 
     onMouseLeave(event){
     
-        console.log(this)
         this.tooltipBox.remove(); // apaga esse elemento do DOM
 
         event.currentTarget.removeEventListener('mouseleave', this.onMouseLeave);

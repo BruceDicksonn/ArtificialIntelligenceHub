@@ -250,14 +250,24 @@
       </h1>
       <h2 class="title-m">Increva-se para receber atualizações</h2>
 
-      <form class="form-contato" action="mailto:b.dickson173@gmail.com">
+      <form class="form-contato" action="https://apirestemail.brucedickson3.repl.co/sendEmail">
          <input type="nome" name="nome" id="nome" required placeholder="Digite seu nome aqui">
          <input type="email" name="email" id="email" required placeholder="Digite um email válido">
-         <textarea placeholder="Deixe sua opinião aqui" id="descricao" name="descricao"></textarea>
-         <button>Enviar</button>
+         <textarea required placeholder="Deixe sua opinião aqui" id="descricao" name="descricao"></textarea>
+         <button type="submit">Enviar</button>
       </form>
 
     </section>
+
+    <div class="form-modal-sucesso">
+      <p>Formulário enviado! Em breve entraremos em contato.</p>
+    </div>
+
+    <div class="form-modal-erro">
+      <p>
+         Ops...algo errado aconteceu</span>. Você pode entrar em contato diretamente conosco em <a style="color:#0000FF;text-decoration:underline;" href="mailto:hub.artificialintelligence@gmail.com">hub.artificialintelligence@gmail.com</a>.
+      </p>
+    </div>
 
 </body>
 
