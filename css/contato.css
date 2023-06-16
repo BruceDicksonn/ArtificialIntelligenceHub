@@ -80,6 +80,7 @@
     padding: 1rem;
     margin: auto;
     border-radius: 4px;
+    z-index: -1;
     opacity: 0;
     transition-duration: 2.5s;
 }
@@ -97,6 +98,7 @@
     padding: 1rem;
     margin: auto;
     border-radius: 4px;
+    z-index: -1;
     opacity: 0;
     transition-duration: 2.5s;
 }
@@ -105,6 +107,7 @@
 .form-modal.erro.active {
     opacity: 1;
     transition-duration: .5s;
+    z-index: 1;
 }
 
 

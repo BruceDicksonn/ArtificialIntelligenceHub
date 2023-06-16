@@ -12,9 +12,9 @@ export default class CheckFormContato {
         const modal = document.querySelector('.form-modal-sucesso');
         modal.classList.add('active');
 
-        setInterval(() => {
+        setTimeout(() => {
             modal.classList.remove('active');
-        }, 2000);
+        }, 1000);
         
     }
 
