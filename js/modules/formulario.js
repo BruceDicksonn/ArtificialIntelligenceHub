@@ -18,8 +18,13 @@ export default class CheckFormContato {
         
     }
 
-    showToggleError(message) {
-        alert(message);
+    showToggleError() {
+        const modal = document.querySelector('.form-modal-erro');
+        modal.classList.add('active');
+
+        setTimeout(() => {
+            modal.classList.remove('active');
+        }, 1000);
     }
 
     submit(e){
@@ -44,7 +49,6 @@ export default class CheckFormContato {
             this.showToggleSuccess()
         }).catch(err => {
             this.showToggleError();
-            console.log(err + 'porra');
         });  
 
 
